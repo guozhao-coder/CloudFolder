@@ -1,0 +1,23 @@
+<seelog levels="trace,debug,info,warn,error,critical">
+    <outputs formatid="main">
+        <!-- 对控制台输出的Log按级别分别用颜色显示 -->
+        <filter levels="trace,debug,info">
+            <console formatid="colored-default"/>
+        </filter>
+        <filter levels="warn">
+            <console formatid="colored-warn"/>
+        </filter>
+        <filter levels="error,critical">
+            <console formatid="colored-error"/>
+        </filter>
+
+        <!-- 将日志输出到磁盘文件，按文件大小进行切割日志，单个文件最大100M，最多5个日志文件 -->
+        <rollingfile formatid="main" type="size" filename="logs.log" maxsize="104857600" maxrolls="5" />
+    </outputs>
+    <formats>
+        <format id="colored-default"  format="%EscM(38)%Date %Time [%LEV] %File:%Line | %Msg%n%EscM(0)"/>
+        <format id="colored-warn"  format="%EscM(33)%Date %Time [%LEV] %File:%Line | %Msg%n%EscM(0)"/>
+        <format id="colored-error"  format="%EscM(31)%Date %Time [%LEV] %File:%Line | %Msg%n%EscM(0)"/>
+        <format id="main" format="%Date %Time [%LEV] %File:%Line | %Msg%n"/>
+    </formats>
+</seelog>

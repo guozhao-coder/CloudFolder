@@ -16,7 +16,7 @@ type EventMsg struct {
 
 //初始化管道
 func ChanInit() {
-	msgChan := make(chan EventMsg, 10)
+	msgChan := make(chan EventMsg, 100)
 	EventMsgChan = msgChan
 }
 
@@ -27,14 +27,19 @@ func PushMsg(e EventMsg) {
 }
 
 func WaitEventMsg() {
+	//注册一个控制并发数的管道
+	chanCtrl := make(chan int, 10)
 	for {
 		select {
 		case E := <-EventMsgChan:
 			switch E.Code {
 			case 1: //删除实际文件
-				go delFile(E.Data.(*base.FileStruct))
+				chanCtrl <- 1
+				go delFile(E.Data.(*base.FileStruct), chanCtrl)
 			case 2: //将文件转移到阿里云oss
-				go saveFileToOSS(E.Data.(*base.FileStruct))
+				chanCtrl <- 1
+				go saveFileToOSS(E.Data.(*base.FileStruct), chanCtrl)
+
 			default:
 				log.Error("请求有误")
 			}

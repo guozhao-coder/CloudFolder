@@ -11,7 +11,11 @@ import (
 )
 
 //删除文件
-func delFile(file *base.FileStruct) {
+func delFile(file *base.FileStruct, ch chan int) {
+	defer func() {
+		<-ch
+		log.Info("释放channel")
+	}()
 	i, err := service.GetFileCountByHash(file.FileHash)
 	if err != nil {
 		log.Error(err.Error())
@@ -35,7 +39,11 @@ func delFile(file *base.FileStruct) {
 }
 
 //将文件同步到oss
-func saveFileToOSS(file *base.FileStruct) {
+func saveFileToOSS(file *base.FileStruct, ch chan int) {
+	defer func() {
+		<-ch
+		log.Info("释放channel")
+	}()
 	fd, err := os.Open(file.FilePath)
 	if err != nil {
 		log.Error(err.Error())

@@ -7,6 +7,9 @@ import (
 
 var EventMsgChan chan EventMsg
 
+//向控制并发的管道放的数据
+var chanMSG = 1
+
 type EventMsg struct {
 	//需要处理的消息码
 	Code int
@@ -34,12 +37,11 @@ func WaitEventMsg() {
 		case E := <-EventMsgChan:
 			switch E.Code {
 			case 1: //删除实际文件
-				chanCtrl <- 1
+				chanCtrl <- chanMSG
 				go delFile(E.Data.(*base.FileStruct), chanCtrl)
 			case 2: //将文件转移到阿里云oss
-				chanCtrl <- 1
+				chanCtrl <- chanMSG
 				go saveFileToOSS(E.Data.(*base.FileStruct), chanCtrl)
-
 			default:
 				log.Error("请求有误")
 			}

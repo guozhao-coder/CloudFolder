@@ -14,7 +14,7 @@ func SaveToken(idKey, token string) {
 	}()
 	conn := config.Redisdb
 	s, err := conn.Set(idKey+"_fileSystemLogin", token, time.Hour*2).Result()
-	log.Error("结果：", s, ",错误", err)
+	log.Info("结果：", s, ",错误", err)
 }
 
 func CheckUserToken(uid, token string) (error, bool) {
@@ -44,5 +44,5 @@ func DeleteToken(id string) {
 	}()
 	conn := config.Redisdb
 	i, err := conn.Del(id + "_fileSystemLogin").Result()
-	log.Error("结果：", i, ",错误", err)
+	log.Info("结果：", i, ",错误", err)
 }

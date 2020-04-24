@@ -11,7 +11,7 @@ import (
 )
 
 //删除文件
-func delFile(file *base.FileStruct, ch chan int) {
+func delFile(file *base.FileStruct, ch <-chan int) {
 	defer func() {
 		<-ch
 		log.Info("释放channel")
@@ -39,7 +39,7 @@ func delFile(file *base.FileStruct, ch chan int) {
 }
 
 //将文件同步到oss
-func saveFileToOSS(file *base.FileStruct, ch chan int) {
+func saveFileToOSS(file *base.FileStruct, ch <-chan int) {
 	defer func() {
 		<-ch
 		log.Info("释放channel")

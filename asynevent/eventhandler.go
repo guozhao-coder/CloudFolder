@@ -8,7 +8,7 @@ import (
 var EventMsgChan chan EventMsg
 
 //向控制并发的管道放的数据
-var chanMSG = 1
+const chanMSG = 1
 
 type EventMsg struct {
 	//需要处理的消息码

@@ -1,14 +1,17 @@
-****# **CloudFolder**
+**CloudFolder**
+
 云文件系统
 
 可以实现用户文件的上传下载以及分享，支持秒传功能。
-使用了go语言的gin框架实现。
+使用了go语言的**Gin**框架实现。
 
 
-使用了阿里云的oss，添加了异步转储文件到oss的功能（通过channel实现）。
+使用了阿里云的oss，使用生产者消费者模式添加了异步转储文件到oss的功能（通过channel实现），在消费消息时使用channel控制并发数。
 
 
-数据库：mysql，redis,mongoDB
+数据库：**redis,mongoDB**
+
+mongoDB用来存储用户信息以及文件元信息，Redis保存用户token实现单用户登录。
 
 安装：
 git clone https://github.com/guozhao-coder/CloudFolder.git
@@ -18,7 +21,7 @@ git clone https://github.com/guozhao-coder/CloudFolder.git
 
 1,把config包中的database文件里的数据库配置改为自己的配置。
 
-2,MySQL表结构很简单，两个表（现在就一个file表，user迁移到了Mongo）：
+2,MySQL表结构很简单，两个表（现在没有表，全部迁移到了Mongo）：
 
 ~~~~
 CREATE TABLE `file` (

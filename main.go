@@ -34,6 +34,8 @@ func main() {
 	asynevent.ChanInit()
 	go asynevent.WaitEventMsg()
 
+	//本地新建了一个分支为guozhao
+
 	//设置路由
 	r := router.Router()
 

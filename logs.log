@@ -2,3 +2,369 @@
 2020-04-24 14:14:34 [INF] database.go:83 | mysql连接成功
 2020-04-24 14:14:35 [INF] database.go:111 | mongo 连接成功
 2020-04-24 14:14:35 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 14:02:38 [INF] database.go:64 | redis连接成功
+2020-04-27 14:02:38 [INF] database.go:83 | mysql连接成功
+2020-04-27 14:02:39 [INF] database.go:111 | mongo 连接成功
+2020-04-27 14:02:39 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 14:04:24 [INF] LoginController.go:20 | ceshi登陆
+2020-04-27 14:04:24 [INF] LoginRedis.go:18 | 结果：OK,错误<nil>
+2020-04-27 14:04:24 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 14:04:24 [DBG] File.go:98 | select fileId,fileName,fileSize,userId,fileTime from file where userId = ?
+2020-04-27 14:04:25 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 14:04:25 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 14:04:39 [INF] FileController.go:85 | ceshi上传文件
+2020-04-27 14:04:39 [DBG] FileController.go:99 | fiesql.sql
+2020-04-27 14:04:39 [INF] FileController.go:151 | ceshi同步文件fiesql.sql
+2020-04-27 14:04:39 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 14:04:39 [INF] event.go:63 | 同步文件ceshi1587967479fiesql.sql成功
+2020-04-27 14:04:39 [INF] event.go:46 | 释放channel
+2020-04-27 14:04:39 [DBG] File.go:98 | select fileId,fileName,fileSize,userId,fileTime from file where userId = ?
+2020-04-27 14:04:39 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 14:04:47 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 14:04:47 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 14:04:47 [DBG] File.go:98 | select fileId,fileName,fileSize,userId,fileTime from file where userId = ?
+2020-04-27 14:04:47 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 14:05:36 [INF] database.go:64 | redis连接成功
+2020-04-27 14:05:36 [INF] database.go:83 | mysql连接成功
+2020-04-27 14:05:36 [INF] database.go:111 | mongo 连接成功
+2020-04-27 14:05:36 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 14:07:51 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 14:07:51 [DBG] File.go:98 | select fileId,fileName,fileSize,userId,fileTime from file where userId = ?
+2020-04-27 14:07:51 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 14:07:51 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 14:08:10 [INF] FileController.go:85 | ceshi上传文件
+2020-04-27 14:08:10 [DBG] FileController.go:99 | 文献参考.txt
+2020-04-27 14:08:10 [INF] FileController.go:151 | ceshi同步文件文献参考.txt
+2020-04-27 14:08:10 [DBG] File.go:59 | INSERT INTO file VALUES(?,?,?,?,?,?,?,?)
+2020-04-27 14:08:10 [INF] event.go:63 | 同步文件ceshi1587967690文献参考.txt成功
+2020-04-27 14:08:10 [INF] event.go:46 | 释放channel
+2020-04-27 14:08:11 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 14:08:11 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 14:08:11 [DBG] File.go:98 | select fileId,fileName,fileSize,userId,fileTime from file where userId = ?
+2020-04-27 14:10:17 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 14:10:17 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 14:10:17 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 14:10:17 [DBG] File.go:98 | select fileId,fileName,fileSize,userId,fileTime from file where userId = ?
+2020-04-27 14:20:08 [INF] database.go:64 | redis连接成功
+2020-04-27 14:20:08 [INF] database.go:83 | mysql连接成功
+2020-04-27 14:20:08 [INF] database.go:111 | mongo 连接成功
+2020-04-27 14:20:08 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 14:20:15 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 14:20:15 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 14:20:15 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 14:20:15 [ERR] FileMongo.go:53 | result argument must be a slice address
+2020-04-27 14:22:13 [INF] database.go:64 | redis连接成功
+2020-04-27 14:22:13 [INF] database.go:83 | mysql连接成功
+2020-04-27 14:22:13 [INF] database.go:111 | mongo 连接成功
+2020-04-27 14:22:13 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 14:22:53 [INF] database.go:64 | redis连接成功
+2020-04-27 14:22:53 [INF] database.go:83 | mysql连接成功
+2020-04-27 14:22:53 [INF] database.go:111 | mongo 连接成功
+2020-04-27 14:22:53 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 14:23:10 [INF] LoginController.go:20 | ceshi登陆
+2020-04-27 14:23:10 [INF] LoginRedis.go:18 | 结果：OK,错误<nil>
+2020-04-27 14:23:10 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 14:23:10 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 14:23:10 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 14:23:26 [ERR] FileMongo.go:24 | not found
+2020-04-27 14:23:26 [INF] FileController.go:85 | ceshi上传文件
+2020-04-27 14:23:26 [DBG] FileController.go:99 | go缺失的知识.txt
+2020-04-27 14:23:26 [INF] FileController.go:151 | ceshi同步文件go缺失的知识.txt
+2020-04-27 14:23:26 [DBG] File.go:59 | INSERT INTO file VALUES(?,?,?,?,?,?,?,?)
+2020-04-27 14:23:26 [INF] event.go:63 | 同步文件ceshi1587968606go缺失的知识.txt成功
+2020-04-27 14:23:26 [INF] event.go:46 | 释放channel
+2020-04-27 14:23:26 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 14:23:26 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 14:38:48 [INF] database.go:64 | redis连接成功
+2020-04-27 14:38:48 [INF] database.go:83 | mysql连接成功
+2020-04-27 14:38:48 [INF] database.go:111 | mongo 连接成功
+2020-04-27 14:38:48 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 14:39:02 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 14:39:02 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 14:39:02 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 14:39:06 [INF] FileController.go:239 | ceshi生成文件链接,文件id：6b43a6f0-e3f0-479d-a685-a1a319cce02d
+2020-04-27 14:39:06 [DBG] File.go:177 | select fileName,filePath,fileHash,ossPath from file where fileId = ?
+2020-04-27 14:39:06 [ERR] File.go:182 | sql: no rows in result set
+2020-04-27 14:40:47 [INF] database.go:64 | redis连接成功
+2020-04-27 14:40:47 [INF] database.go:83 | mysql连接成功
+2020-04-27 14:40:48 [INF] database.go:111 | mongo 连接成功
+2020-04-27 14:40:48 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 14:41:07 [INF] LoginController.go:20 | ceshi登陆
+2020-04-27 14:41:08 [INF] LoginRedis.go:18 | 结果：OK,错误<nil>
+2020-04-27 14:41:08 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 14:41:08 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 14:41:08 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 14:41:11 [INF] FileController.go:239 | ceshi生成文件链接,文件id：6b43a6f0-e3f0-479d-a685-a1a319cce02d
+2020-04-27 14:53:23 [INF] database.go:64 | redis连接成功
+2020-04-27 14:53:23 [INF] database.go:83 | mysql连接成功
+2020-04-27 14:53:24 [INF] database.go:111 | mongo 连接成功
+2020-04-27 14:53:24 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 14:53:29 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 14:53:29 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 14:53:29 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 14:53:31 [INF] FileController.go:239 | ceshi生成文件链接,文件id：6b43a6f0-e3f0-479d-a685-a1a319cce02d
+2020-04-27 15:01:20 [INF] database.go:64 | redis连接成功
+2020-04-27 15:01:20 [INF] database.go:83 | mysql连接成功
+2020-04-27 15:01:20 [INF] database.go:111 | mongo 连接成功
+2020-04-27 15:01:20 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 15:01:54 [INF] FileController.go:385 | ceshi删除文件6b43a6f0-e3f0-479d-a685-a1a319cce02d
+2020-04-27 15:01:54 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 15:01:54 [INF] event.go:18 | 释放channel
+2020-04-27 15:01:55 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 15:18:48 [INF] database.go:64 | redis连接成功
+2020-04-27 15:18:48 [INF] database.go:83 | mysql连接成功
+2020-04-27 15:18:48 [INF] database.go:111 | mongo 连接成功
+2020-04-27 15:18:48 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 15:18:55 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 15:18:55 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 15:18:55 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 15:19:06 [ERR] FileMongo.go:25 | not found
+2020-04-27 15:19:06 [INF] FileController.go:85 | ceshi上传文件
+2020-04-27 15:19:06 [DBG] FileController.go:99 | fiesql.sql
+2020-04-27 15:19:07 [INF] FileController.go:151 | ceshi同步文件fiesql.sql
+2020-04-27 15:19:07 [DBG] File.go:59 | INSERT INTO file VALUES(?,?,?,?,?,?,?,?)
+2020-04-27 15:19:07 [INF] event.go:63 | 同步文件ceshi1587971947fiesql.sql成功
+2020-04-27 15:19:07 [INF] event.go:46 | 释放channel
+2020-04-27 15:19:07 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 15:19:07 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 15:20:04 [INF] FileController.go:33 | ceshi秒传文件
+2020-04-27 15:20:05 [ERR] FileController.go:72 | runtime error: invalid memory address or nil pointer dereference
+2020-04-27 15:21:23 [INF] LoginController.go:20 | ceshi登陆
+2020-04-27 15:21:23 [INF] LoginRedis.go:18 | 结果：OK,错误<nil>
+2020-04-27 15:21:23 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 15:21:24 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 15:21:24 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 15:22:13 [INF] FileController.go:33 | ceshi秒传文件
+2020-04-27 15:22:13 [ERR] FileController.go:72 | runtime error: invalid memory address or nil pointer dereference
+2020-04-27 15:23:13 [INF] database.go:64 | redis连接成功
+2020-04-27 15:23:13 [INF] database.go:83 | mysql连接成功
+2020-04-27 15:23:13 [INF] database.go:111 | mongo 连接成功
+2020-04-27 15:23:13 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 15:23:31 [INF] LoginController.go:20 | ceshi登陆
+2020-04-27 15:23:31 [INF] LoginRedis.go:18 | 结果：OK,错误<nil>
+2020-04-27 15:23:31 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 15:23:31 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 15:23:32 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 15:24:59 [INF] database.go:64 | redis连接成功
+2020-04-27 15:24:59 [INF] database.go:83 | mysql连接成功
+2020-04-27 15:24:59 [INF] database.go:111 | mongo 连接成功
+2020-04-27 15:24:59 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 15:25:19 [INF] FileController.go:33 | ceshi秒传文件
+2020-04-27 15:25:19 [INF] FileController.go:151 | ceshi同步文件fiesql.sql
+2020-04-27 15:25:19 [DBG] File.go:59 | INSERT INTO file VALUES(?,?,?,?,?,?,?,?)
+2020-04-27 15:25:20 [INF] event.go:63 | 同步文件ceshi1587972319fiesql.sql成功
+2020-04-27 15:25:20 [INF] event.go:46 | 释放channel
+2020-04-27 15:25:20 [INF] FileController.go:79 | 支持秒传
+2020-04-27 15:25:20 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 15:25:20 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 15:26:09 [INF] FileController.go:33 | ceshi秒传文件
+2020-04-27 15:26:09 [INF] FileController.go:151 | ceshi同步文件fiesql.sql
+2020-04-27 15:26:09 [INF] event.go:63 | 同步文件ceshi1587972369fiesql.sql成功
+2020-04-27 15:26:09 [INF] event.go:46 | 释放channel
+2020-04-27 15:26:09 [DBG] File.go:59 | INSERT INTO file VALUES(?,?,?,?,?,?,?,?)
+2020-04-27 15:26:09 [INF] FileController.go:79 | 支持秒传
+2020-04-27 15:26:10 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 15:26:10 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 15:38:41 [INF] database.go:64 | redis连接成功
+2020-04-27 15:38:41 [INF] database.go:83 | mysql连接成功
+2020-04-27 15:38:41 [INF] database.go:111 | mongo 连接成功
+2020-04-27 15:38:41 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 15:38:53 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 15:38:53 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 15:38:53 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 15:39:01 [INF] FileController.go:347 | ceshi模糊查询文件
+2020-04-27 15:39:25 [INF] FileController.go:347 | ceshi模糊查询文件
+2020-04-27 16:12:18 [INF] database.go:64 | redis连接成功
+2020-04-27 16:12:18 [INF] database.go:83 | mysql连接成功
+2020-04-27 16:12:19 [INF] database.go:111 | mongo 连接成功
+2020-04-27 16:12:19 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 16:12:28 [INF] FileController.go:347 | ceshi模糊查询文件
+2020-04-27 16:12:28 [ERR] FileMongo.go:160 | $in needs an array
+2020-04-27 16:12:58 [INF] database.go:64 | redis连接成功
+2020-04-27 16:12:58 [INF] database.go:83 | mysql连接成功
+2020-04-27 16:12:58 [INF] database.go:111 | mongo 连接成功
+2020-04-27 16:12:59 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 16:13:13 [INF] LoginController.go:20 | ceshi登陆
+2020-04-27 16:13:13 [INF] LoginRedis.go:18 | 结果：OK,错误<nil>
+2020-04-27 16:13:13 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 16:13:13 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 16:13:14 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 16:13:23 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 16:13:23 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 16:13:23 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 16:13:28 [INF] FileController.go:347 | ceshi模糊查询文件
+2020-04-27 16:46:19 [INF] database.go:64 | redis连接成功
+2020-04-27 16:46:19 [INF] database.go:83 | mysql连接成功
+2020-04-27 16:46:20 [INF] database.go:111 | mongo 连接成功
+2020-04-27 16:46:20 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 16:46:25 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 16:46:25 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 16:46:26 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 16:46:48 [ERR] FileMongo.go:26 | not found
+2020-04-27 16:46:48 [INF] FileController.go:85 | ceshi上传文件
+2020-04-27 16:46:48 [DBG] FileController.go:99 | 物联c161-167330-郭朝-中期报告.doc
+2020-04-27 16:46:48 [INF] FileController.go:151 | ceshi同步文件物联c161-167330-郭朝-中期报告.doc
+2020-04-27 16:46:48 [DBG] File.go:59 | INSERT INTO file VALUES(?,?,?,?,?,?,?,?)
+2020-04-27 16:46:48 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 16:46:48 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 16:46:48 [INF] event.go:63 | 同步文件ceshi1587977208物联c161-167330-郭朝-中期报告.doc成功
+2020-04-27 16:46:48 [INF] event.go:46 | 释放channel
+2020-04-27 16:53:50 [INF] database.go:64 | redis连接成功
+2020-04-27 16:53:50 [INF] database.go:83 | mysql连接成功
+2020-04-27 16:53:50 [INF] database.go:111 | mongo 连接成功
+2020-04-27 16:53:50 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 16:54:50 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 16:54:50 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 16:54:50 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 16:54:57 [INF] FileController.go:385 | ceshi删除文件99700cb6-0f50-4bc7-83f6-bbbadfa1f249
+2020-04-27 16:54:58 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 16:54:58 [INF] event.go:18 | 释放channel
+2020-04-27 16:54:58 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 16:55:01 [INF] FileController.go:385 | ceshi删除文件b6041211-c65f-416d-972e-f4241b8a0f3c
+2020-04-27 16:55:02 [INF] event.go:18 | 释放channel
+2020-04-27 16:55:02 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 16:55:02 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 16:55:05 [INF] FileController.go:385 | ceshi删除文件0593f501-c753-4279-a589-2b138e41c2fe
+2020-04-27 16:55:05 [INF] event.go:18 | 释放channel
+2020-04-27 16:55:05 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 16:55:05 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 16:55:08 [INF] FileController.go:385 | ceshi删除文件098555ff-bb9c-4134-acb2-47244aa6e479
+2020-04-27 16:55:08 [INF] event.go:18 | 释放channel
+2020-04-27 16:55:09 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 16:55:09 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 16:55:12 [INF] FileController.go:385 | ceshi删除文件4415d5e2-7e64-4925-a6ed-55a67aab624e
+2020-04-27 16:55:12 [INF] event.go:18 | 释放channel
+2020-04-27 16:55:13 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 16:55:13 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 16:55:16 [INF] FileController.go:385 | ceshi删除文件5c026bce-7d70-4117-a9b9-f77a146f9776
+2020-04-27 16:55:16 [INF] event.go:18 | 释放channel
+2020-04-27 16:55:16 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 16:55:16 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 16:55:20 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 16:55:20 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 16:55:20 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 17:02:48 [INF] database.go:64 | redis连接成功
+2020-04-27 17:02:49 [INF] database.go:83 | mysql连接成功
+2020-04-27 17:02:49 [INF] database.go:111 | mongo 连接成功
+2020-04-27 17:02:49 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 17:03:10 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 17:03:10 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 17:03:10 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 17:03:53 [ERR] FileMongo.go:26 | not found
+2020-04-27 17:03:53 [INF] FileController.go:85 | ceshi上传文件
+2020-04-27 17:03:53 [DBG] FileController.go:99 | go缺失的知识.txt
+2020-04-27 17:03:53 [INF] FileController.go:151 | ceshi同步文件go缺失的知识.txt
+2020-04-27 17:03:53 [DBG] File.go:59 | INSERT INTO file VALUES(?,?,?,?,?,?,?,?)
+2020-04-27 17:03:53 [INF] event.go:63 | 同步文件ceshi1587978233go缺失的知识.txt成功
+2020-04-27 17:03:53 [INF] event.go:46 | 释放channel
+2020-04-27 17:03:53 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 17:03:53 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 17:07:01 [INF] database.go:64 | redis连接成功
+2020-04-27 17:07:02 [INF] database.go:83 | mysql连接成功
+2020-04-27 17:07:02 [INF] database.go:111 | mongo 连接成功
+2020-04-27 17:07:02 [INF] oss.go:31 | oss实例创建成功
+2020-04-27 17:07:08 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 17:07:08 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 17:07:08 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-27 17:07:24 [ERR] FileMongo.go:26 | not found
+2020-04-27 17:07:24 [INF] FileController.go:85 | ceshi上传文件
+2020-04-27 17:07:24 [DBG] FileController.go:99 | 物联c161-167330-郭朝-中期报告.doc
+2020-04-27 17:07:24 [INF] FileController.go:151 | ceshi同步文件物联c161-167330-郭朝-中期报告.doc
+2020-04-27 17:07:24 [DBG] File.go:59 | INSERT INTO file VALUES(?,?,?,?,?,?,?,?)
+2020-04-27 17:07:24 [INF] event.go:63 | 同步文件ceshi1587978444物联c161-167330-郭朝-中期报告.doc成功
+2020-04-27 17:07:24 [INF] event.go:46 | 释放channel
+2020-04-27 17:07:24 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 17:07:24 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-27 17:07:39 [ERR] FileMongo.go:26 | not found
+2020-04-27 17:07:39 [INF] FileController.go:85 | ceshi上传文件
+2020-04-27 17:07:39 [DBG] FileController.go:99 | fiesql.sql
+2020-04-27 17:07:40 [INF] FileController.go:151 | ceshi同步文件fiesql.sql
+2020-04-27 17:07:40 [INF] event.go:63 | 同步文件ceshi1587978460fiesql.sql成功
+2020-04-27 17:07:40 [INF] event.go:46 | 释放channel
+2020-04-27 17:07:40 [DBG] File.go:59 | INSERT INTO file VALUES(?,?,?,?,?,?,?,?)
+2020-04-27 17:07:40 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-27 17:07:40 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-29 08:43:50 [INF] database.go:64 | redis连接成功
+2020-04-29 08:43:50 [INF] database.go:83 | mysql连接成功
+2020-04-29 08:43:51 [INF] database.go:111 | mongo 连接成功
+2020-04-29 08:43:51 [INF] oss.go:31 | oss实例创建成功
+2020-04-29 08:44:03 [INF] database.go:64 | redis连接成功
+2020-04-29 08:44:03 [INF] database.go:83 | mysql连接成功
+2020-04-29 08:44:03 [INF] database.go:111 | mongo 连接成功
+2020-04-29 08:44:03 [INF] oss.go:31 | oss实例创建成功
+2020-04-29 08:44:50 [INF] database.go:64 | redis连接成功
+2020-04-29 08:44:50 [INF] database.go:83 | mysql连接成功
+2020-04-29 08:44:50 [INF] database.go:111 | mongo 连接成功
+2020-04-29 08:45:08 [INF] oss.go:31 | oss实例创建成功
+2020-04-30 12:25:34 [INF] database.go:64 | redis连接成功
+2020-04-30 12:25:34 [INF] database.go:83 | mysql连接成功
+2020-04-30 12:25:35 [INF] database.go:111 | mongo 连接成功
+2020-04-30 12:25:35 [INF] oss.go:31 | oss实例创建成功
+2020-04-30 12:30:12 [INF] database.go:64 | redis连接成功
+2020-04-30 12:30:13 [INF] database.go:83 | mysql连接成功
+2020-04-30 12:30:13 [INF] database.go:111 | mongo 连接成功
+2020-04-30 12:30:13 [INF] oss.go:31 | oss实例创建成功
+2020-04-30 12:30:33 [INF] database.go:64 | redis连接成功
+2020-04-30 12:30:33 [INF] database.go:83 | mysql连接成功
+2020-04-30 12:30:33 [INF] database.go:111 | mongo 连接成功
+2020-04-30 12:30:33 [INF] oss.go:31 | oss实例创建成功
+2020-04-30 12:31:41 [INF] database.go:64 | redis连接成功
+2020-04-30 12:31:41 [INF] database.go:83 | mysql连接成功
+2020-04-30 12:31:41 [INF] database.go:111 | mongo 连接成功
+2020-04-30 12:31:42 [INF] oss.go:31 | oss实例创建成功
+2020-04-30 12:32:38 [INF] database.go:64 | redis连接成功
+2020-04-30 12:32:38 [INF] database.go:83 | mysql连接成功
+2020-04-30 12:32:38 [INF] database.go:111 | mongo 连接成功
+2020-04-30 12:32:38 [INF] oss.go:31 | oss实例创建成功
+2020-04-30 12:32:47 [INF] database.go:64 | redis连接成功
+2020-04-30 12:32:48 [INF] database.go:83 | mysql连接成功
+2020-04-30 12:32:48 [INF] database.go:111 | mongo 连接成功
+2020-04-30 12:32:48 [INF] oss.go:31 | oss实例创建成功
+2020-04-30 12:32:59 [INF] database.go:64 | redis连接成功
+2020-04-30 12:32:59 [INF] database.go:83 | mysql连接成功
+2020-04-30 12:33:00 [INF] database.go:111 | mongo 连接成功
+2020-04-30 12:33:00 [INF] oss.go:31 | oss实例创建成功
+2020-04-30 12:33:40 [INF] database.go:64 | redis连接成功
+2020-04-30 12:33:40 [INF] database.go:83 | mysql连接成功
+2020-04-30 12:33:41 [INF] database.go:111 | mongo 连接成功
+2020-04-30 12:33:41 [INF] oss.go:31 | oss实例创建成功
+2020-04-30 12:36:13 [INF] database.go:64 | redis连接成功
+2020-04-30 12:36:13 [INF] database.go:83 | mysql连接成功
+2020-04-30 12:36:14 [INF] database.go:111 | mongo 连接成功
+2020-04-30 12:36:14 [INF] oss.go:31 | oss实例创建成功
+2020-04-30 12:36:39 [INF] database.go:64 | redis连接成功
+2020-04-30 12:36:40 [INF] database.go:83 | mysql连接成功
+2020-04-30 12:36:40 [INF] database.go:111 | mongo 连接成功
+2020-04-30 12:36:40 [INF] oss.go:31 | oss实例创建成功
+2020-04-30 12:36:55 [INF] database.go:64 | redis连接成功
+2020-04-30 12:36:55 [INF] database.go:83 | mysql连接成功
+2020-04-30 12:36:56 [INF] database.go:111 | mongo 连接成功
+2020-04-30 12:36:56 [INF] oss.go:31 | oss实例创建成功
+2020-04-30 12:37:15 [INF] LoginController.go:20 | ceshi登陆
+2020-04-30 12:37:15 [INF] LoginRedis.go:18 | 结果：OK,错误<nil>
+2020-04-30 12:37:15 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-30 12:37:15 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-30 12:37:15 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-30 12:43:20 [INF] LoginController.go:36 | ceshi退出登陆
+2020-04-30 12:43:20 [INF] LoginRedis.go:48 | 结果：1,错误<nil>
+2020-04-30 12:43:49 [INF] LoginController.go:20 | guozhao登陆
+2020-04-30 12:43:50 [INF] LoginRedis.go:18 | 结果：OK,错误<nil>
+2020-04-30 12:43:50 [INF] FileController.go:306 | guozhao查看文件列表
+2020-04-30 12:43:50 [INF] LoginController.go:42 | guozhao查看用户
+2020-04-30 12:43:50 [INF] FileController.go:366 | guozhao查看容量信息
+2020-04-30 12:44:07 [INF] LoginController.go:36 | guozhao退出登陆
+2020-04-30 12:44:07 [INF] LoginRedis.go:48 | 结果：1,错误<nil>
+2020-04-30 12:48:05 [INF] LoginController.go:20 | ceshi登陆
+2020-04-30 12:48:05 [INF] LoginRedis.go:18 | 结果：OK,错误<nil>
+2020-04-30 12:48:05 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-30 12:48:06 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-30 12:48:06 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-30 12:48:17 [ERR] FileMongo.go:27 | not found
+2020-04-30 12:48:17 [INF] FileController.go:85 | ceshi上传文件
+2020-04-30 12:48:17 [DBG] FileController.go:99 | 郭朝第5周周报.pdf
+2020-04-30 12:48:17 [INF] FileController.go:151 | ceshi同步文件郭朝第5周周报.pdf
+2020-04-30 12:48:17 [DBG] File.go:59 | INSERT INTO file VALUES(?,?,?,?,?,?,?,?)
+2020-04-30 12:48:17 [INF] event.go:63 | 同步文件ceshi1588222097郭朝第5周周报.pdf成功
+2020-04-30 12:48:17 [INF] event.go:46 | 释放channel
+2020-04-30 12:48:17 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-30 12:48:17 [INF] FileController.go:366 | ceshi查看容量信息

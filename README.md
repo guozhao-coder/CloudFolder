@@ -53,7 +53,11 @@ CREATE TABLE `user` (
 
 
 页面效果：
+![image](https://github.com/guozhao-coder/CloudFolder/blob/master/project-images/login.png)
+
+
+
 ![image](https://github.com/guozhao-coder/CloudFolder/blob/master/project-images/index.png)
 
 
-![image](https://github.com/guozhao-coder/CloudFolder/blob/master/project-images/login.png)
+

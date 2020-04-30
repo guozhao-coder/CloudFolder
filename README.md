@@ -51,3 +51,9 @@ CREATE TABLE `user` (
 
 5，访问本地5656端口
 
+
+页面效果：
+![image](https://github.com/guozhao-coder/CloudFolder/blob/master/project-images/index.png)
+
+
+![image](https://github.com/guozhao-coder/CloudFolder/blob/master/project-images/login.png)

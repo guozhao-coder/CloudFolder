@@ -368,3 +368,31 @@
 2020-04-30 12:48:17 [INF] event.go:46 | 释放channel
 2020-04-30 12:48:17 [INF] FileController.go:306 | ceshi查看文件列表
 2020-04-30 12:48:17 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-30 13:17:11 [ERR] database.go:60 | redis连接异常dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.
+2020-04-30 13:17:11 [ERR] main.go:24 | dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.
+2020-04-30 13:18:06 [INF] database.go:64 | redis连接成功
+2020-04-30 13:18:06 [INF] database.go:83 | mysql连接成功
+2020-04-30 13:18:06 [INF] database.go:111 | mongo 连接成功
+2020-04-30 13:18:06 [INF] oss.go:31 | oss实例创建成功
+2020-04-30 13:19:23 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-30 13:19:23 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-30 13:19:23 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-30 13:19:27 [INF] LoginController.go:36 | ceshi退出登陆
+2020-04-30 13:19:28 [INF] LoginRedis.go:48 | 结果：1,错误<nil>
+2020-04-30 13:19:41 [INF] LoginController.go:20 | ceshi登陆
+2020-04-30 13:19:42 [INF] LoginRedis.go:18 | 结果：OK,错误<nil>
+2020-04-30 13:19:42 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-30 13:19:42 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-30 13:19:42 [INF] LoginController.go:42 | ceshi查看用户
+2020-04-30 13:19:58 [INF] FileController.go:385 | ceshi删除文件99a983d0-4f64-4b86-b351-4092469cb5d9
+2020-04-30 13:19:58 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-30 13:19:58 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-30 13:19:58 [ERR] event.go:34 | 文件删除出错:remove filepath/ceshi_1588036031_131的监控项.xls: The system cannot find the file specified.
+2020-04-30 13:19:58 [INF] event.go:18 | 释放channel
+2020-04-30 13:20:57 [INF] LoginController.go:36 | ceshi退出登陆
+2020-04-30 13:20:57 [INF] LoginRedis.go:48 | 结果：1,错误<nil>
+2020-04-30 13:32:08 [INF] LoginController.go:20 | ceshi登陆
+2020-04-30 13:32:08 [INF] LoginRedis.go:18 | 结果：OK,错误<nil>
+2020-04-30 13:32:09 [INF] FileController.go:306 | ceshi查看文件列表
+2020-04-30 13:32:09 [INF] FileController.go:366 | ceshi查看容量信息
+2020-04-30 13:32:09 [INF] LoginController.go:42 | ceshi查看用户

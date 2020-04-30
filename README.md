@@ -48,3 +48,6 @@ CREATE TABLE `user` (
 3,设置项目为mod模式，设置proxy为https://goproxy.io
 
 4，go run main.go
+
+5，访问本地5656端口
+

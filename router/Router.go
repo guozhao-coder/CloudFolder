@@ -53,5 +53,11 @@ func Router() *gin.Engine {
 	//第二版下载文件
 	//服务器下载文件(不区分用户自己或者他人)
 	r.GET("/pan/file/downloadbyurl/:ftoken", controller.DownLoadByUrl)
+
+	r.StaticFile("/", "front/index.html")
+	r.Static("/js/", "front/js/")
+	r.Static("/css/", "front/css/")
+	r.Static("/img/", "front/img/")
+	r.Static("/fonts/", "front/fonts/")
 	return r
 }

@@ -13,6 +13,19 @@
 
 mongoDB用来存储用户信息以及文件元信息，Redis保存用户token实现单用户登录。
 
+目录结构：
+~~~~
+asynevent：通过channel传递消息的消费端
+base：结构体信息，以及提示码等信息
+controller：控制器层，接入api
+db:数据库访问层，访问mongo，mysql，redis
+filepath：文件存储位置
+front：前端静态页面
+router：路由层
+service：逻辑处理层
+test：部分测试代码
+util：工具类层
+~~~~
 安装：
 git clone https://github.com/guozhao-coder/CloudFolder.git
 

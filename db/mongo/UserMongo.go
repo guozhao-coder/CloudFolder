@@ -76,3 +76,21 @@ func GetUserName(uid string) (string, error) {
 	}
 	return uname.Username, err
 }
+
+//修改用户信息
+func UpdateUserInfo(u *base.UserStruct) (bool, error) {
+	defer func() {
+		if err := recover(); err != nil {
+			log.Error(err)
+		}
+	}()
+	c := config.MgoClient.Copy().DB("").C("user")
+	defer c.Database.Session.Close()
+	info, err := c.Upsert(bson.M{"user_id": u.UserId}, bson.M{"$set": bson.M{"username": u.Username, "usermail": u.UserMail}})
+	if err != nil {
+		log.Error(err.Error())
+		return false, err
+	}
+	log.Info(info)
+	return true, nil
+}

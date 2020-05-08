@@ -44,3 +44,24 @@ func genarateToken(id string) string {
 func UserRegister(u *base.UserStruct) (*base.NormalResponse, error) {
 	return mongo.UserRegister(u)
 }
+
+func UpdateUserInfo(u *base.UserStruct) (bool, bool, error) {
+	//首先比对用户名密码是否匹配
+	response, err := mongo.UserLogin(u)
+	if err != nil {
+		return false, false, err
+	}
+	//用户名密码出错
+	if response.Code != 200 {
+		return false, false, nil
+	}
+	//执行修改
+	b, err := mongo.UpdateUserInfo(u)
+	if err != nil {
+		return true, false, err
+	}
+	if b {
+		return true, true, nil
+	}
+	return true, false, nil
+}

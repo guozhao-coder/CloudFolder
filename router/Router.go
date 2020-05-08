@@ -21,6 +21,8 @@ func Router() *gin.Engine {
 			user.GET("/logout", auth(), controller.Logout)
 			//用户信息
 			user.GET("/info", auth(), controller.GetUserName)
+			//修改个人信息
+			user.POST("/info/update", auth(), controller.UpdateUserInfo)
 		}
 
 		//文件操作部门路由

@@ -22,4 +22,6 @@ const (
 	RESPONSE_NIL                 = 4021 //结果为空
 	FILE_TOO_BIG                 = 4022 //文件过大
 	SPACE_NOT_ENOUGH             = 4024 //空间不足
+	USERNAME_ERROR               = 4025 //用户名格式错误
+	USERMAIL_ERROR               = 4026 //用户邮箱格式错误
 )

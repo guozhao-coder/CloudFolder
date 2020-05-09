@@ -122,3 +122,37 @@ func UpdateUserInfo(c *gin.Context) {
 	c.JSON(200, gin.H{"code": code.SUCCESS, "message": "修改成功"})
 	return
 }
+
+func SendMail(c *gin.Context) {
+	uid := c.Param("uid")
+	response, _ := service.SendMail(uid)
+	if response.Code == 1 {
+		c.JSON(200, gin.H{"code": code.GET_ERR, "message": "查询此人出错"})
+		return
+	}
+	if response.Code == 2 {
+		c.JSON(200, gin.H{"code": code.ADD_ERR, "message": "保存验证码失败"})
+		return
+	}
+	c.JSON(200, gin.H{"code": code.SUCCESS, "message": "成功"})
+	return
+}
+
+func CheckMailCode(c *gin.Context) {
+	uid := c.Param("uid")
+	ucode := c.Param("ucode")
+	b, e := service.CheckMailCode(uid, ucode)
+	if e != nil {
+		c.JSON(200, gin.H{"code": code.GET_ERR, "message": "校验失败"})
+		return
+	}
+	if !b {
+		c.JSON(200, gin.H{"code": code.GET_ERR, "message": "验证码出错"})
+		return
+	}
+	//生成一个token,存到redis
+	token := service.GenarateToken(uid)
+	service.SaveToken(uid, token)
+	c.JSON(200, gin.H{"code": code.SUCCESS, "message": "成功", "token": token})
+	return
+}

@@ -2,11 +2,14 @@ package asynevent
 
 import (
 	"bufio"
+	"gin-file/db/mongo"
+
 	"gin-file/base"
 	"gin-file/config"
-	"gin-file/service"
+	"gin-file/utils"
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
 	log "github.com/cihub/seelog"
+
 	"os"
 )
 
@@ -16,7 +19,7 @@ func delFile(file *base.FileStruct, ch <-chan int) {
 		<-ch
 		log.Info("释放channel")
 	}()
-	i, err := service.GetFileCountByHash(file.FileHash)
+	i, err := mongo.GetFileCountByHash(file.FileHash)
 	if err != nil {
 		log.Error(err.Error())
 		return
@@ -61,4 +64,16 @@ func saveFileToOSS(file *base.FileStruct, ch <-chan int) {
 	}
 	log.Info("同步文件", file.OssPath, "成功")
 	return
+}
+
+//发送邮件
+func sendMail(u *base.EmailStruct, ch <-chan int) {
+	defer func() {
+		<-ch
+		log.Info("释放channel")
+	}()
+	err := utils.SendMail(u.MailCode, u.UserMail, u.Username)
+	if err != nil {
+		log.Error(err.Error())
+	}
 }

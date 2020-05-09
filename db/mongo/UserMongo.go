@@ -59,8 +59,8 @@ func UserRegister(u *base.UserStruct) (*base.NormalResponse, error) {
 	return &base.NormalResponse{Code: code.DATA_EXIST, Message: "用户已存在"}, nil
 }
 
-//查询用户名
-func GetUserName(uid string) (string, error) {
+//查询用户信息
+func GetUserInfo(uid string) (*base.UserStruct, error) {
 	defer func() {
 		if err := recover(); err != nil {
 			log.Error(err)
@@ -68,13 +68,13 @@ func GetUserName(uid string) (string, error) {
 	}()
 	c := config.MgoClient.Copy().DB("").C("user")
 	defer c.Database.Session.Close()
-	var uname base.UserStruct
-	err := c.Find(bson.M{"user_id": uid}).One(&uname)
+	var uInfo base.UserStruct
+	err := c.Find(bson.M{"user_id": uid}).One(&uInfo)
 	if err != nil {
 		log.Error(err)
-		return "", err
+		return nil, err
 	}
-	return uname.Username, err
+	return &uInfo, err
 }
 
 //修改用户信息

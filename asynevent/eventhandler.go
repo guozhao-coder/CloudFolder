@@ -19,7 +19,7 @@ type EventMsg struct {
 
 //初始化管道
 func ChanInit() {
-	msgChan := make(chan EventMsg, 100)
+	msgChan := make(chan EventMsg, 1000)
 	EventMsgChan = msgChan
 }
 
@@ -31,7 +31,7 @@ func PushMsg(e EventMsg) {
 
 func WaitEventMsg() {
 	//注册一个控制并发数的管道
-	chanCtrl := make(chan int, 10)
+	chanCtrl := make(chan int, 100)
 	for {
 		select {
 		case E := <-EventMsgChan:
@@ -42,6 +42,9 @@ func WaitEventMsg() {
 			case 2: //将文件转移到阿里云oss
 				chanCtrl <- chanMSG
 				go saveFileToOSS(E.Data.(*base.FileStruct), chanCtrl)
+			case 3:
+				chanCtrl <- chanMSG
+				go sendMail(E.Data.(*base.EmailStruct), chanCtrl)
 			default:
 				log.Error("请求有误")
 			}

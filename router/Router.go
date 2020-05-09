@@ -23,6 +23,10 @@ func Router() *gin.Engine {
 			user.GET("/info", auth(), controller.GetUserName)
 			//修改个人信息
 			user.POST("/info/update", auth(), controller.UpdateUserInfo)
+			//给用户发送邮件
+			user.GET("/emailcode/send/:uid", controller.SendMail)
+			//检验验证码
+			user.GET("/emailcode/check/:uid/:ucode", controller.CheckMailCode)
 		}
 
 		//文件操作部门路由

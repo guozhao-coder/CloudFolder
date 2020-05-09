@@ -14,3 +14,9 @@ type NormalResponse struct {
 	Message string
 	Data    interface{}
 }
+
+type EmailStruct struct {
+	Username string
+	UserMail string
+	MailCode int
+}

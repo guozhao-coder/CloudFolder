@@ -3,14 +3,13 @@ package service
 import (
 	"gin-file/base"
 	"gin-file/db/mongo"
-	"gin-file/db/mysql"
 	"gin-file/db/redis"
 	"github.com/dgrijalva/jwt-go"
 	"time"
 )
 
 func AddFile(f *base.FileStruct) (*base.NormalResponse, error) {
-	mysql.AddFile(f)
+	//mysql.AddFile(f)
 	return mongo.AddFile(f)
 }
 
